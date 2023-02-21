@@ -7,14 +7,6 @@ void initQueue(Queue *q, unsigned int size)
 	q->maxSize = size;
 	q->count = 0;
 	q->elements = new int[q->maxSize];
-
-	unsigned int step = 0;
-	while (step < size)
-	{
-		q->elements[step] = NULL;
-		step++;
-	}
-
 	q->empty = true;
 }
 
